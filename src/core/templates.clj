@@ -15,6 +15,6 @@
           [:input#message {:type "text"}]
           [:input.nice.large.blue.button {:type "submit"}]]
         [:div#messages]]]]
-    (include-js "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+    (include-js "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
     (include-js "/static/javascripts/web_socket.js")
     (include-js "/static/javascripts/app.js")]))
