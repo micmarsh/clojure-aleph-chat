@@ -6,5 +6,6 @@
                  [ring "1.1.0-beta2"]
                  [hiccup "1.0.0-beta1"]
                  [lein-swank "1.4.4"]]
+  :min-lein-version "2.0.0"
   :ring {:handler core.main/-main}
   :main core.main)
