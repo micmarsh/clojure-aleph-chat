@@ -43,4 +43,4 @@
   "Main thread for the server which starts an async server with
   all the routes we specified and is websocket ready."
   (start-http-server (wrap-ring-handler app-routes)
-                     {:host "localhost" :port (or port 8080) :websocket true}))
+                     {:host "localhost" :port (or (Integer. port) 8080) :websocket true}))
