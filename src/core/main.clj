@@ -39,8 +39,8 @@
   ;;Any url without a route handler will be served this response
   (route/not-found "Page not found"))
 
-(defn -main [& args]
+(defn -main [& [port]]
   "Main thread for the server which starts an async server with
   all the routes we specified and is websocket ready."
   (start-http-server (wrap-ring-handler app-routes)
-                     {:host "localhost" :port 8080 :websocket true}))
+                     {:host "localhost" :port (or port 8080) :websocket true}))
