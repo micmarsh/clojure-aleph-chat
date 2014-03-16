@@ -1,6 +1,6 @@
 $ ->
     do open = ->
-        window.socket = new WebSocket window.location.href.replace("http://", "ws://")
+        window.socket = new WebSocket window.location.href.replace("https://", "ws://")
         socket.onopen = ->
             console.log "socket opened"
         socket.onmessage = (msg) ->

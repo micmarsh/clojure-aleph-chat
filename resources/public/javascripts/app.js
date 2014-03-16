@@ -3,7 +3,7 @@
   $(function() {
     var open;
     (open = function() {
-      window.socket = new WebSocket(window.location.href.replace("http://", "ws://"));
+      window.socket = new WebSocket(window.location.href.replace("https://", "ws://"));
       socket.onopen = function() {
         return console.log("socket opened");
       };
